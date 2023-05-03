@@ -54,14 +54,14 @@ function App() {
     const url = await uploadImage(imageData)
 
     // Mint NFT
-    await mintImage(url)
+    //await mintImage(url)
 
     setIsWaiting(false)
     setMessage("")
   }
 
   const createImage = async () => {
-    setMessage("Generating Image...")
+    setMessage("Generating Image...pls wait..")
 
     // You can replace this with different model API's
     const URL = `https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-2`
